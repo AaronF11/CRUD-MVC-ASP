@@ -8,7 +8,7 @@ namespace CRUD_MVC_ASP.Data
 {
     public class DataContact
     {
-        public List<ContactModel> Contacts()
+        public List<ContactModel> GetListOfContacts()
         {
             var List = new List<ContactModel>();
 
@@ -82,6 +82,7 @@ namespace CRUD_MVC_ASP.Data
                     cmd.Parameters.AddWithValue("Phone", Contact.Phone);
                     cmd.Parameters.AddWithValue("Mail", Contact.Email);
                     cmd.CommandType = CommandType.StoredProcedure;    
+                    cmd.ExecuteNonQuery();
                 }
                 
                 answer = true;
@@ -112,6 +113,7 @@ namespace CRUD_MVC_ASP.Data
                     cmd.Parameters.AddWithValue("Phone", Contact.Phone);
                     cmd.Parameters.AddWithValue("Mail", Contact.Email);
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.ExecuteNonQuery();
                 }
 
                 answer = true;
@@ -139,6 +141,7 @@ namespace CRUD_MVC_ASP.Data
                     SqlCommand cmd = new SqlCommand("DeleteContact", cn);
                     cmd.Parameters.AddWithValue("Id", Id);
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.ExecuteNonQuery();
                 }
 
                 answer = true;
