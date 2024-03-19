@@ -32,11 +32,14 @@
 }
 
 .card {
-    width: 400px !important;
     margin: 20px auto !important;
     border-radius: 15px !important;
     border: none !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.card-add {
+    width: 400px !important;
 }
 
 .card-header {
@@ -109,6 +112,14 @@
     background-color: #0056b3;
 }
 
+.container {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .return {
     background-color: #007bff;
     color: #fff;
@@ -116,8 +127,8 @@
     border-radius: 15px;
     padding: 10px 20px;
     cursor: pointer;
-    -webkit-text-decoration:  none;
-    text-decoration:  none;
+    -webkit-text-decoration: none;
+    text-decoration: none;
     transition: background-color 0.2s ease-in-out;
 }
 
@@ -125,3 +136,92 @@
     background-color: #0056b3;
     color: #fff;
 }
+
+i {
+    font-size: 18px;
+}
+
+.save {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+}
+
+.save:hover {
+    background-color: #218838;
+    color: #fff;
+}
+
+.edit {
+    background-color: #ffc107;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+}
+
+.edit:hover {
+    background-color: #e0a800; 
+    color: #fff;
+}
+
+.delete {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+    width: fit-content;
+}
+
+.delete:hover {
+    background-color: #c82333;
+    color: #fff;
+}
+
+
+.custom-table {
+    border-radius: 15px;
+    overflow: hidden;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom-table th,
+.custom-table td {
+    border: 1px solid #dee2e6;
+    text-align: center;
+}
+
+.custom-table td {
+    padding: 15px;
+}
+
+.custom-table th {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+

@@ -23,6 +23,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Main}/{action=Save}/{id?}");
+    pattern: "{controller=Main}/{action=List}/{id?}");
 
 app.Run();
