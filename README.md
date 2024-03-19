@@ -65,4 +65,4 @@ Deleting a contact:
 If you encounter any issues or have suggestions to improve the CRUD Contact App, feel free to open an issue or submit a pull request. Your contribution is highly appreciated!
 
 ## License
-This project is licensed under the [MIT License](/LICENSE.txt).
+This project is licensed under the [MIT License](/LICENSE.md).
